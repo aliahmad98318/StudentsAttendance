@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class about_us extends StatefulWidget {
-  @override
-  _DataTableExample createState() => _DataTableExample();
-}
-
-class _DataTableExample extends State<about_us> {
+class about_us extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

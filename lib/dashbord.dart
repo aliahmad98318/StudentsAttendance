@@ -6,6 +6,7 @@ import 'package:students_attendance/teacher.dart';
 import 'class.dart';
 
 class dashbord extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

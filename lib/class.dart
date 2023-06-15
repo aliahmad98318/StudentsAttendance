@@ -5,7 +5,7 @@ class classes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Welcome to page Classes')),
+        title: Center(child: Text('Welcome To Class Page ')),
       ),
       body: Column(
         children: [
@@ -13,7 +13,7 @@ class classes extends StatelessWidget {
             height: 300,
             width: double.maxFinite,
             margin: EdgeInsets.all(5),
-            color: Colors.grey,
+            color: Colors.tealAccent,
             child: Padding(
               padding: EdgeInsets.all(15),
               child: Column(
@@ -24,7 +24,7 @@ class classes extends StatelessWidget {
                       style: TextStyle(),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        labelText: 'Class Name ',
+                        labelText: 'Create New Class ',
                         hintText: 'Enter Your Class Name',
                       ),
                     ),
@@ -42,25 +42,28 @@ class classes extends StatelessWidget {
             margin: EdgeInsets.all(5),
             height: 380,
             color: Colors.green,
-            child:ListView(children: <Widget>[
+            child: ListView(children: <Widget>[
               Center(
                   child: Text(
-                    'All Classes',
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                  )),
+                'All Classes',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              )),
               DataTable(
                 columns: [
-                  DataColumn(label: Text('ID',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,)
-                  )),
-                  DataColumn(label: Text('Name',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
-                  )),
-
-                  DataColumn(label: Text('Delete/Update ',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
-                  )),
-
+                  DataColumn(
+                      label: Text('ID',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ))),
+                  DataColumn(
+                      label: Text('Name',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold))),
+                  DataColumn(
+                      label: Text('Delete/Update ',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold))),
                 ],
                 rows: [
                   DataRow(cells: [
