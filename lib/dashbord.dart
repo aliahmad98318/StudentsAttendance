@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:students_attendance/about_us.dart';
+import 'package:students_attendance/attendance.dart';
+import 'package:students_attendance/student.dart';
+import 'package:students_attendance/teacher.dart';
 import 'class.dart';
 
 class dashbord extends StatelessWidget {
@@ -29,26 +33,30 @@ class dashbord extends StatelessWidget {
               leading: Icon(Icons.person),
               title: Text('Teacher'),
               onTap: (){
-                Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+                Navigator.push(context,MaterialPageRoute(builder: (context){return teacher();}),);
               },
             ),
             ListTile(
               leading: Icon(Icons.person_pin),
               title: Text('Student'),
               onTap:(){
-                Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+                Navigator.push(context,MaterialPageRoute(builder: (context){return students();}),);
               },
               
             ),
             ListTile(
               leading: Icon(Icons.library_books),
               title: Text('Attendance'),
-              onTap:()=>print('favorate'),
+              onTap: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context){return attendance();}),);
+              },
             ),
             ListTile(
               leading: Icon(Icons.description),
               title: Text('about us'),
-              onTap:()=>print('favorate'),
+              onTap:(){
+                Navigator.push(context,MaterialPageRoute(builder: (context){return about_us();}),);
+              },
             )
 
           ],
