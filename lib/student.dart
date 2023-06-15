@@ -9,6 +9,7 @@ class _studentsState extends State<students> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Center(child: Text('Student'),),),
       body: SingleChildScrollView(
         child: Column(
           children: [
