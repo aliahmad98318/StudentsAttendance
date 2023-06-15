@@ -39,20 +39,32 @@ class classes extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.only(left: 0, top: 5, right: 0, bottom: 0),
-            height: 420,
-            width: double.maxFinite,
+            height: 350,
             color: Colors.green,
-            child: DataTable(
-              columns: [
-                DataColumn(
-                  label: Text('name'),
-                ),
-              ],
-              rows: [
-                DataRow(
-                  cells: [DataCell(Text('ali'))],
-                ),
-              ],
+            child: Center(
+              child: Column(
+                children: [
+                  DataTable(
+                    columns: [
+                      DataColumn(
+                        label: Text(
+                          'ID',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 20,
+                              color: Colors.black),
+                        ),
+                      ),
+
+                    ],
+                    rows: [
+                      DataRow(
+                        cells: [DataCell(Text('ali'))],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],

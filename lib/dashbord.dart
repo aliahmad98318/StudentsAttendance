@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'class.dart';
 
 class dashbord extends StatelessWidget {
   @override
@@ -12,20 +13,31 @@ class dashbord extends StatelessWidget {
               accountEmail: Text('aliahmadhaqmal77@gmail.com'),
               currentAccountPicture: CircleAvatar(child: ClipOval(child: Text('Photo'),),),
             ),
-           ListTile(
-             leading: Icon(Icons.class_),
-              title: Text('Class'),
-             onTap:()=>print('favorate'),
+           InkWell(
+             onTap: (){
+               Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+             },
+             child: ListTile(
+               leading: Icon(Icons.class_),
+                title: Text('Class'),
+               onTap:(){
+                 Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+               },
+             ),
            ),
             ListTile(
               leading: Icon(Icons.person),
               title: Text('Teacher'),
-              onTap:()=>print('favorate'),
+              onTap: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+              },
             ),
             ListTile(
               leading: Icon(Icons.person_pin),
               title: Text('Student'),
-              onTap:()=>print('favorate'),
+              onTap:(){
+                Navigator.push(context,MaterialPageRoute(builder: (context){return classes();}),);
+              },
               
             ),
             ListTile(

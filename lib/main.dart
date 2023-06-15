@@ -13,6 +13,6 @@ void main() => runApp(
       primaryColor: Colors.blue,
       colorScheme: ColorScheme.light(background: Colors.blueGrey),
     ),
-    home: classes(),
+    home: dashbord(),
   ),
 );
