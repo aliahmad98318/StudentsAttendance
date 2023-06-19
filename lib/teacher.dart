@@ -157,7 +157,11 @@ class _teacherState extends State<teacher> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update',
+                        label: Text('Edit',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Delete',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                   ],
@@ -170,7 +174,16 @@ class _teacherState extends State<teacher> {
                       DataCell(Text('07923432344')),
                       DataCell(Text('Speak Now 3')),
                       DataCell(Text('1402/4/1')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.edit),
+                        ),
+                      ),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.delete),
+                        ),
+                      ),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('2')),
@@ -180,7 +193,16 @@ class _teacherState extends State<teacher> {
                       DataCell(Text('07934432344')),
                       DataCell(Text('Speak Now 2')),
                       DataCell(Text('1402/3/1')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.edit),
+                        ),
+                      ),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.delete),
+                        ),
+                      ),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('3')),
@@ -190,7 +212,16 @@ class _teacherState extends State<teacher> {
                       DataCell(Text('07923488844')),
                       DataCell(Text('Speak Now 5')),
                       DataCell(Text('1402/4/1')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.edit),
+                        ),
+                      ),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.delete),
+                        ),
+                      ),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('4')),
@@ -200,7 +231,16 @@ class _teacherState extends State<teacher> {
                       DataCell(Text('079234329980')),
                       DataCell(Text('Speak Now 2')),
                       DataCell(Text('1402/2/1')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.edit),
+                        ),
+                      ),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.delete),
+                        ),
+                      ),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('5')),
@@ -210,7 +250,16 @@ class _teacherState extends State<teacher> {
                       DataCell(Text('07923432344')),
                       DataCell(Text('Speak Now 3')),
                       DataCell(Text('1402/4/1')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.edit),
+                        ),
+                      ),
+                      DataCell(
+                        ListTile(
+                          leading: Icon(Icons.delete),
+                        ),
+                      ),
                     ]),
                   ],
                 ),
