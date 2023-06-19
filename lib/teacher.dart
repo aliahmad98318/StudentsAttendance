@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 class teacher extends StatefulWidget {
   @override
   State<teacher> createState() => _teacherState();
 }
+
 class _teacherState extends State<teacher> {
   @override
   Widget build(BuildContext context) {
@@ -18,29 +20,25 @@ class _teacherState extends State<teacher> {
               width: double.maxFinite,
               margin: EdgeInsets.all(5),
               color: Colors.cyan,
-              child: Padding(
-                padding: EdgeInsets.all(15),
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(15),
-                      child: TextField(
-                        style: TextStyle(),
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Create New Teacher ',
-                          hintText: 'Enter Teacher Name',
-                        ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Create New Teacher ',
+                        hintText: 'Enter Teacher Name',
                       ),
-
                     ),
-                    InkWell(
-                      focusColor: Colors.white,
-                      child: Text('Save'),
-                      onTap: () {},
-                    )
-                  ],
-                ),
+                  ),
+                  InkWell(
+                    focusColor: Colors.white,
+                    child: Text('Save'),
+                    onTap: () {},
+                  )
+                ],
               ),
             ),
             Container(
@@ -50,9 +48,9 @@ class _teacherState extends State<teacher> {
               child: ListView(children: <Widget>[
                 Center(
                     child: Text(
-                      'All Teachers',
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                    )),
+                  'All Teachers',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                )),
                 DataTable(
                   columns: [
                     DataColumn(

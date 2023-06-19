@@ -62,8 +62,8 @@ class takeAttendance extends StatefulWidget {
                                style: TextStyle(),
                                decoration: InputDecoration(
                                  border: OutlineInputBorder(),
-                                 labelText: 'Hour ',
-                                 hintText: 'Enter Your hour ',
+                                 labelText: 'Time ',
+                                 hintText: 'Enter Your time ',
                                ),
                              ),
                            ),
@@ -118,7 +118,7 @@ class takeAttendance extends StatefulWidget {
                              style: TextStyle(
                                  fontSize: 18, fontWeight: FontWeight.bold))),
                      DataColumn(
-                         label: Text('Re_Absent',
+                         label: Text('Total Absents',
                              style: TextStyle(
                                  fontSize: 18, fontWeight: FontWeight.bold))),
                    ],
