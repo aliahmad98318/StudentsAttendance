@@ -186,7 +186,7 @@ class _studentsState extends State<students> {
                       DataCell(Text('2')),
                       DataCell(Text('ali')),
                       DataCell(Text('Ahmad')),
-                      DataCell(Text('7-9')),
+                      DataCell(Text('Azizi')),
                       DataCell(Text('Yes')),
                       DataCell(Text('07934432344')),
                       DataCell(Text('Speak Now 2')),
