@@ -16,7 +16,7 @@ class _teacherState extends State<teacher> {
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 200,
               width: double.maxFinite,
               margin: EdgeInsets.all(5),
               color: Colors.cyan,
@@ -28,10 +28,83 @@ class _teacherState extends State<teacher> {
                       style: TextStyle(),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        labelText: 'Create New Teacher ',
-                        hintText: 'Enter Teacher Name',
+                        labelText: ' Name ',
+                        hintText: 'Enter Your Name',
                       ),
                     ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Last Name ',
+                        hintText: 'Enter Your Last Name',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Phone Number ',
+                        hintText: 'Enter Your Phone Number',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Email Address ',
+                        hintText: 'Enter Your Email Address',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Select a Book',
+                        hintText: 'choise a book ',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Date Started',
+                        hintText: 'Select date Created book ',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30,
                   ),
                   InkWell(
                     focusColor: Colors.white,
@@ -43,7 +116,7 @@ class _teacherState extends State<teacher> {
             ),
             Container(
               margin: EdgeInsets.all(5),
-              height: 380,
+              height: 500,
               color: Colors.green,
               child: ListView(children: <Widget>[
                 Center(
@@ -64,7 +137,27 @@ class _teacherState extends State<teacher> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update ',
+                        label: Text('Last Name ',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Email Address ',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Phone Number',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Teaching Book',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Started Date',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Started Date',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                   ],
@@ -72,48 +165,15 @@ class _teacherState extends State<teacher> {
                     DataRow(cells: [
                       DataCell(Text('1')),
                       DataCell(Text('Ahmad')),
+                      DataCell(Text('')),
+                      DataCell(Text('Delete/Update')),
+                      DataCell(Text('Delete/Update')),
+                      DataCell(Text('Delete/Update')),
+                      DataCell(Text('Delete/Update')),
                       DataCell(Text('Delete/Update')),
                     ]),
-                    DataRow(cells: [
-                      DataCell(Text('5')),
-                      DataCell(Text('Khalid Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('10')),
-                      DataCell(Text('Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('abdullah')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Hakim')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ab.sattar')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('omid')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ruof')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
+
+
                   ],
                 ),
               ]),
