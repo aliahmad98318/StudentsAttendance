@@ -93,7 +93,7 @@ class classes extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Hour',
+                        label: Text('Time',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
@@ -101,7 +101,11 @@ class classes extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update ',
+                        label: Text('Edit ',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Delete',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                   ],
@@ -111,35 +115,40 @@ class classes extends StatelessWidget {
                       DataCell(Text('Spaek Now 3')),
                       DataCell(Text('5-6 P.M')),
                       DataCell(Text('H')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(ListTile(leading: Icon(Icons.edit),),),
+                      DataCell(ListTile(leading: Icon(Icons.delete),),),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('2')),
                       DataCell(Text('Spaek Now 1')),
                       DataCell(Text('5-6 P.M')),
                       DataCell(Text('J')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(ListTile(leading: Icon(Icons.edit),),),
+                      DataCell(ListTile(leading: Icon(Icons.delete),),),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('3')),
                       DataCell(Text('Spaek Now 2')),
                       DataCell(Text('4-5 P.M')),
                       DataCell(Text('A')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(ListTile(leading: Icon(Icons.edit),),),
+                      DataCell(ListTile(leading: Icon(Icons.delete),),),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('4')),
                       DataCell(Text('Startar')),
                       DataCell(Text('10-11 A.M')),
                       DataCell(Text('R')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(ListTile(leading: Icon(Icons.edit),),),
+                      DataCell(ListTile(leading: Icon(Icons.delete),),),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('5')),
                       DataCell(Text('Spaek Now 5')),
                       DataCell(Text('2-3 P.M')),
                       DataCell(Text('N')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(ListTile(leading: Icon(Icons.edit),),),
+                      DataCell(ListTile(leading: Icon(Icons.delete),),),
                     ]),
 
 

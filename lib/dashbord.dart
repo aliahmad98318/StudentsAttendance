@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:students_attendance/about_us.dart';
-import 'package:students_attendance/attendance.dart';
 import 'package:students_attendance/student.dart';
 import 'package:students_attendance/take_attendance.dart';
 import 'package:students_attendance/teacher.dart';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:students_attendance/dashbord.dart';
+import 'package:students_attendance/sign_in.dart';
 import 'package:students_attendance/take_attendance.dart';
 import 'package:students_attendance/teacher.dart';
 import 'class.dart';
@@ -15,6 +16,6 @@ void main() => runApp(
       primaryColor: Colors.blue,
       colorScheme: ColorScheme.light(background: Colors.blueGrey),
     ),
-    home: dashbord(),
+    home: sign_in(),
   ),
 );
