@@ -29,7 +29,7 @@ class _studentsState extends State<students> {
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: ' Name ',
-                        hintText: 'Enter Your Name',
+                        hintText: 'Enter  Name',
                       ),
                     ),
                   ),
@@ -117,11 +117,11 @@ class _studentsState extends State<students> {
             Container(
               margin: EdgeInsets.all(5),
               height: 500,
-              color: Colors.green,
+              color: Colors.brown,
               child: ListView(children: <Widget>[
                 Center(
                     child: Text(
-                      'Showing of all Student',
+                      'Showing of all Students',
                       style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     )),
                 DataTable(
@@ -141,6 +141,10 @@ class _studentsState extends State<students> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
+                        label: Text('Last Name ',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
                         label: Text('Enroll',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
@@ -150,6 +154,10 @@ class _studentsState extends State<students> {
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
                         label: Text(' Book',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Time ',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
@@ -165,50 +173,60 @@ class _studentsState extends State<students> {
                     DataRow(cells: [
                       DataCell(Text('1')),
                       DataCell(Text('Ahmad')),
+                      DataCell(Text('Ahmad')),
                       DataCell(Text('Ahmadi')),
                       DataCell(Text('Yes')),
                       DataCell(Text('07923432344')),
                       DataCell(Text('Speak Now 3')),
+                      DataCell(Text('7-9')),
                       DataCell(Text('1402/4/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('2')),
                       DataCell(Text('ali')),
-                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Ahmad')),
+                      DataCell(Text('7-9')),
                       DataCell(Text('Yes')),
                       DataCell(Text('07934432344')),
                       DataCell(Text('Speak Now 2')),
+                      DataCell(Text('7-9')),
                       DataCell(Text('1402/3/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('3')),
                       DataCell(Text('Omid')),
-                      DataCell(Text('Mohammadi')),
+                      DataCell(Text('Mohammad')),
+                      DataCell(Text('Ahmadi')),
                       DataCell(Text('Yes')),
                       DataCell(Text('07923488844')),
                       DataCell(Text('Speak Now 5')),
+                      DataCell(Text('7-9')),
                       DataCell(Text('1402/4/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('4')),
                       DataCell(Text('Khlid')),
-                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Ahmad')),
+                      DataCell(Text('Mohmoodi')),
                       DataCell(Text('Yes')),
                       DataCell(Text('079234329980')),
                       DataCell(Text('Speak Now 2')),
+                      DataCell(Text('8-9')),
                       DataCell(Text('1402/2/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('5')),
                       DataCell(Text('Ahmad')),
-                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Mohammad')),
+                      DataCell(Text('Mohammadi')),
                       DataCell(Text(' Yes')),
                       DataCell(Text('07923432344')),
                       DataCell(Text('Speak Now 3')),
+                      DataCell(Text('6-7')),
                       DataCell(Text('1402/4/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
