@@ -121,7 +121,7 @@ class _teacherState extends State<teacher> {
               child: ListView(children: <Widget>[
                 Center(
                     child: Text(
-                  'All Teachers',
+                  'View Of all Teachers',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 )),
                 DataTable(
@@ -157,7 +157,7 @@ class _teacherState extends State<teacher> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Started Date',
+                        label: Text('Delete/Update',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                   ],
@@ -165,15 +165,53 @@ class _teacherState extends State<teacher> {
                     DataRow(cells: [
                       DataCell(Text('1')),
                       DataCell(Text('Ahmad')),
-                      DataCell(Text('')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Ahmadi234@gmail.com')),
+                      DataCell(Text('07923432344')),
+                      DataCell(Text('Speak Now 3')),
+                      DataCell(Text('1402/4/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
-
-
+                    DataRow(cells: [
+                      DataCell(Text('2')),
+                      DataCell(Text('ali')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Ali234@gmail.com')),
+                      DataCell(Text('07934432344')),
+                      DataCell(Text('Speak Now 2')),
+                      DataCell(Text('1402/3/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('3')),
+                      DataCell(Text('Omid')),
+                      DataCell(Text('Mohammadi')),
+                      DataCell(Text('omid4@gmail.com')),
+                      DataCell(Text('07923488844')),
+                      DataCell(Text('Speak Now 5')),
+                      DataCell(Text('1402/4/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('4')),
+                      DataCell(Text('Khlid')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Khlid234@gmail.com')),
+                      DataCell(Text('079234329980')),
+                      DataCell(Text('Speak Now 2')),
+                      DataCell(Text('1402/2/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('5')),
+                      DataCell(Text('Ahmad')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Ahmadi234@gmail.com')),
+                      DataCell(Text('07923432344')),
+                      DataCell(Text('Speak Now 3')),
+                      DataCell(Text('1402/4/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
                   ],
                 ),
               ]),

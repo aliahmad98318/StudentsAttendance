@@ -8,49 +8,120 @@ class students extends StatefulWidget {
 class _studentsState extends State<students> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Center(child: Text('Student'),),),
-      body:SingleChildScrollView(
+    return  Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text('Welcome To Student Page ')),
+      ),
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 200,
               width: double.maxFinite,
               margin: EdgeInsets.all(5),
-              color: Colors.tealAccent,
-              child: Padding(
-                padding: EdgeInsets.all(15),
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(15),
-                      child: TextField(
-                        style: TextStyle(),
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Create New Student ',
-                          hintText: 'Enter Student Name',
-                        ),
+              color: Colors.grey,
+              child: Row(
+                children: [
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: ' Name ',
+                        hintText: 'Enter Your Name',
                       ),
-
                     ),
-                    InkWell(
-                      focusColor: Colors.white,
-                      child: Text('Save'),
-                      onTap: () {},
-                    )
-                  ],
-                ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Father Name ',
+                        hintText: 'Enter Father Name',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Phone Number ',
+                        hintText: 'Enter  Phone Number',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Eroll ',
+                        hintText: 'paid your fee ,please',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Select a Book',
+                        hintText: 'choise a book ',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 200,
+                    child: TextField(
+                      style: TextStyle(),
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Date Started',
+                        hintText: 'Select date Created book ',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  InkWell(
+                    focusColor: Colors.white,
+                    child: Text('Save'),
+                    onTap: () {},
+                  )
+                ],
               ),
             ),
             Container(
               margin: EdgeInsets.all(5),
-              height: 380,
-              color: Colors.teal,
+              height: 500,
+              color: Colors.green,
               child: ListView(children: <Widget>[
                 Center(
                     child: Text(
-                      'All Student',
+                      'Showing of all Student',
                       style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     )),
                 DataTable(
@@ -66,7 +137,27 @@ class _studentsState extends State<students> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update ',
+                        label: Text('Father Name ',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Enroll',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Phone Number',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text(' Book',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Started Date',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold))),
+                    DataColumn(
+                        label: Text('Delete/Update',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                   ],
@@ -74,46 +165,51 @@ class _studentsState extends State<students> {
                     DataRow(cells: [
                       DataCell(Text('1')),
                       DataCell(Text('Ahmad')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Yes')),
+                      DataCell(Text('07923432344')),
+                      DataCell(Text('Speak Now 3')),
+                      DataCell(Text('1402/4/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('2')),
+                      DataCell(Text('ali')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Yes')),
+                      DataCell(Text('07934432344')),
+                      DataCell(Text('Speak Now 2')),
+                      DataCell(Text('1402/3/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('3')),
+                      DataCell(Text('Omid')),
+                      DataCell(Text('Mohammadi')),
+                      DataCell(Text('Yes')),
+                      DataCell(Text('07923488844')),
+                      DataCell(Text('Speak Now 5')),
+                      DataCell(Text('1402/4/1')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('4')),
+                      DataCell(Text('Khlid')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text('Yes')),
+                      DataCell(Text('079234329980')),
+                      DataCell(Text('Speak Now 2')),
+                      DataCell(Text('1402/2/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('5')),
-                      DataCell(Text('Khalid Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('10')),
                       DataCell(Text('Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('abdullah')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Hakim')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ab.sattar')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('omid')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ahmad')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Ruof')),
+                      DataCell(Text('Ahmadi')),
+                      DataCell(Text(' Yes')),
+                      DataCell(Text('07923432344')),
+                      DataCell(Text('Speak Now 3')),
+                      DataCell(Text('1402/4/1')),
                       DataCell(Text('Delete/Update')),
                     ]),
                   ],
@@ -123,7 +219,6 @@ class _studentsState extends State<students> {
           ],
         ),
       ),
-
     );
   }
 }
