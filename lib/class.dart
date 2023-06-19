@@ -11,7 +11,7 @@ class classes extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 200,
               width: double.maxFinite,
               margin: EdgeInsets.all(5),
               color: Colors.tealAccent,
@@ -29,29 +29,31 @@ class classes extends StatelessWidget {
                               style: TextStyle(),
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                labelText: 'New Book ',
+                                labelText: 'Create New Book ',
                                 hintText: 'Enter Your Book Name',
                               ),
                             ),
                           ),
+                          SizedBox(width: 20,),
                           Container(
                             width: 200,
                             child: TextField(
                               style: TextStyle(),
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                labelText: 'Hour ',
+                                labelText: 'Create Hour ',
                                 hintText: 'Enter Your Hour',
                               ),
                             ),
                           ),
+                          SizedBox(width: 20,),
                           Container(
                             width: 200,
                             child: TextField(
                               style: TextStyle(),
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                labelText: 'New Class ',
+                                labelText: 'Create New Class ',
                                 hintText: 'New Class Like: A,E',
                               ),
                             ),
@@ -70,7 +72,7 @@ class classes extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(5),
-              height: 380,
+              height: 500,
               color: Colors.green,
               child: ListView(children: <Widget>[
                 Center(
