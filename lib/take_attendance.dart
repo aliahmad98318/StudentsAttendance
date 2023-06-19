@@ -20,7 +20,7 @@ class takeAttendance extends StatefulWidget {
          child: Column(
            children: [
              Container(
-               height: 300,
+               height: 200,
                width: double.maxFinite,
                margin: EdgeInsets.all(5),
                color: Colors.tealAccent,
@@ -81,8 +81,8 @@ class takeAttendance extends StatefulWidget {
              ),
              Container(
                margin: EdgeInsets.all(5),
-               height: 380,
-               color: Colors.green,
+               height: 500,
+               color: Colors.teal,
                child: ListView(children: <Widget>[
                  Center(
                      child: Text(
@@ -124,35 +124,35 @@ class takeAttendance extends StatefulWidget {
                    ],
                    rows: [
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('101')),
                        DataCell(Text('Ali')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Abdul Jabbar')),
                        DataCell(Text('Yes')),
-                       DataCell(Checkbox(value: false,onChanged: (bool? value) {  },),),
+                       DataCell(Checkbox(value: true,onChanged: (bool? value) {  },),),
                        DataCell(Text('4')),
 
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('2')),
+                       DataCell(Text('102')),
                        DataCell(Text('Ali ahmad')),
                        DataCell(Text('Ahmadi')),
                        DataCell(Text('Abdullah')),
                        DataCell(Text('Yes')),
-                       DataCell(Checkbox(value: false,onChanged: (bool? value) {  },)),
+                       DataCell(Checkbox(value: true,onChanged: (bool? value) {  },)),
                        DataCell(Text('2')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('103')),
                        DataCell(Text('Ahmad')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Jabbar')),
                        DataCell(Text('No')),
                        DataCell(Checkbox(value: false,onChanged: (bool? value) {  },)),
-                       DataCell(Text('4')),
+                       DataCell(Text('1')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('104')),
                        DataCell(Text('Ali')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Abdul Jabbar')),
@@ -161,34 +161,34 @@ class takeAttendance extends StatefulWidget {
                        DataCell(Text('3')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('105')),
                        DataCell(Text('Omid')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Abdul Jabbar')),
                        DataCell(Text('Yes')),
-                       DataCell(Checkbox(value: false,onChanged: (bool? value) {  },),),
+                       DataCell(Checkbox(value: true,onChanged: (bool? value) {  },),),
                        DataCell(Text('5')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('106')),
                        DataCell(Text('Hamed')),
                        DataCell(Text('Mohammadi')),
                        DataCell(Text('ali')),
                        DataCell(Text('Yes')),
-                       DataCell(Checkbox(value: false,onChanged: (bool? value) {  },)),
+                       DataCell(Checkbox(value: true,onChanged: (bool? value) {  },)),
                        DataCell(Text('3')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('107')),
                        DataCell(Text('Ali')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Abdul Jabbar')),
                        DataCell(Text('Yes')),
-                       DataCell(Checkbox(value: false,onChanged: (bool? value) {  },),),
+                       DataCell(Checkbox(value: true,onChanged: (bool? value) {  },),),
                        DataCell(Text('3')),
                      ]),
                      DataRow(cells: [
-                       DataCell(Text('1')),
+                       DataCell(Text('118')),
                        DataCell(Text('Ali')),
                        DataCell(Text('Haqmal')),
                        DataCell(Text('Abdul Jabbar')),
@@ -206,7 +206,7 @@ class takeAttendance extends StatefulWidget {
                  Center(
                    child: InkWell(
                      focusColor: Colors.red,
-                     child: Text('Save'),
+                     child: Text('Save',style: TextStyle(color: Colors.red),),
                      onTap: () {},
                    ),
                  )

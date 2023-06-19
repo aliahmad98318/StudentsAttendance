@@ -29,8 +29,8 @@ class classes extends StatelessWidget {
                               style: TextStyle(),
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                labelText: 'Create New Class ',
-                                hintText: 'Enter Your Class Name',
+                                labelText: 'New Book ',
+                                hintText: 'Enter Your Book Name',
                               ),
                             ),
                           ),
@@ -40,8 +40,19 @@ class classes extends StatelessWidget {
                               style: TextStyle(),
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                labelText: 'Create New Class ',
-                                hintText: 'Enter Your Class Name',
+                                labelText: 'Hour ',
+                                hintText: 'Enter Your Hour',
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 200,
+                            child: TextField(
+                              style: TextStyle(),
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'New Class ',
+                                hintText: 'New Class Like: A,E',
                               ),
                             ),
                           ),
@@ -76,15 +87,15 @@ class classes extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ))),
                     DataColumn(
-                        label: Text('Name',
+                        label: Text('Book Name',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update ',
+                        label: Text('Hour',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
-                        label: Text('Delete/Update ',
+                        label: Text('Class Name',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold))),
                     DataColumn(
@@ -95,67 +106,41 @@ class classes extends StatelessWidget {
                   rows: [
                     DataRow(cells: [
                       DataCell(Text('1')),
+                      DataCell(Text('Spaek Now 3')),
+                      DataCell(Text('5-6 P.M')),
+                      DataCell(Text('H')),
+                      DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('2')),
                       DataCell(Text('Spaek Now 1')),
+                      DataCell(Text('5-6 P.M')),
+                      DataCell(Text('J')),
                       DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('3')),
+                      DataCell(Text('Spaek Now 2')),
+                      DataCell(Text('4-5 P.M')),
+                      DataCell(Text('A')),
                       DataCell(Text('Delete/Update')),
+                    ]),
+                    DataRow(cells: [
+                      DataCell(Text('4')),
+                      DataCell(Text('Startar')),
+                      DataCell(Text('10-11 A.M')),
+                      DataCell(Text('R')),
                       DataCell(Text('Delete/Update')),
                     ]),
                     DataRow(cells: [
                       DataCell(Text('5')),
-                      DataCell(Text('speak now 2')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('10')),
-                      DataCell(Text('speak now 3')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
+                      DataCell(Text('Spaek Now 5')),
+                      DataCell(Text('2-3 P.M')),
+                      DataCell(Text('N')),
                       DataCell(Text('Delete/Update')),
                     ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('speak now 4')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('speak now 5')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('Startar')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('speak now 5')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('speak now 3')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
-                    DataRow(cells: [
-                      DataCell(Text('15')),
-                      DataCell(Text('speak now 1')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                      DataCell(Text('Delete/Update')),
-                    ]),
+
+
                   ],
                 ),
               ]),

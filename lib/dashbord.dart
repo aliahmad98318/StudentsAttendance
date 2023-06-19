@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:students_attendance/about_us.dart';
 import 'package:students_attendance/attendance.dart';
 import 'package:students_attendance/student.dart';
+import 'package:students_attendance/take_attendance.dart';
 import 'package:students_attendance/teacher.dart';
 import 'class.dart';
 
@@ -49,7 +50,7 @@ class dashbord extends StatelessWidget {
               leading: Icon(Icons.library_books),
               title: Text('Attendance'),
               onTap: (){
-                Navigator.push(context,MaterialPageRoute(builder: (context){return attendance();}),);
+                Navigator.push(context,MaterialPageRoute(builder: (context){return takeAttendance();}),);
               },
             ),
             ListTile(
