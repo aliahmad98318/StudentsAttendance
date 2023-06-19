@@ -16,7 +16,7 @@ class dashbord extends StatelessWidget {
             UserAccountsDrawerHeader(
               accountName: Text('Ali Ahmad Haqmal'),
               accountEmail: Text('aliahmadhaqmal77@gmail.com'),
-              currentAccountPicture: CircleAvatar(child: ClipOval(child: Text('Photo'),),),
+              currentAccountPicture: CircleAvatar(child: ClipOval(child: Image(image: AssetImage('images/Haqmal.jpg'),),),),
             ),
            InkWell(
              onTap: (){
